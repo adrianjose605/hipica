@@ -30,7 +30,7 @@ class Distancia extends CI_Controller {
         echo json_encode($res);
     }
 
-    public function tabla_principal_distancia($count = 5, $page = 1, $order = 'distancia', $type = 'asc') {
+    public function tabla_principal_distancia($count = 15, $page = 1, $order = 'distancia', $type = 'asc') {
         if ($type != 'asc') {
             $type = 'desc';
         }

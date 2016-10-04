@@ -12,7 +12,7 @@
             <accordion close-others="oneAtATime">
                 <accordion-group>
                     <accordion-heading>
-                        <p><span class="glyphicon glyphicon-menu-down" style="margin-right: 10px;"></span> Configuracion de Parametros</p>
+                        <p><span class="glyphicon glyphicon-menu-down" style="margin-right: 10px;"></span> Configuracion</p>
                     </accordion-heading> 
                     <md-list class="listdemoListControls">
                     <h2 class="md-no-sticky md-subheader md-default-theme"><div class="md-subheader-inner"><span class="md-subheader-content"><span class="ng-scope">Localizacion y Pistas</span></span></div></h2>
@@ -87,16 +87,43 @@
                             <p><span class="glyphicon glyphicon-menu-right" style="margin-right: 10px;"></span> Ejemplares</p>
                         </md-list-item>
                     </md-list>
-                    <h2 class="md-no-sticky md-subheader md-default-theme"><div class="md-subheader-inner"><span class="md-subheader-content"><span class="ng-scope">Carreras</span></span></div></h2>
-                        <md-list-item ng-click="navigateTo('bloque/preCarga')">
-                            <p><span class="glyphicon glyphicon-menu-right" style="margin-right: 10px;"></span> Llamados</p>
-                        </md-list-item>
+                    
                        
                     <md-divider class="md-default-theme"></md-divider>
                 </accordion-group>
                 <accordion-group>
                     <accordion-heading>
-                        <p><span class="glyphicon glyphicon-menu-down" style="margin-right: 10px;"></span> Manejo de Personal</p>
+                        <p><span class="glyphicon glyphicon-menu-down" style="margin-right: 10px;"></span> Llamados</p>
+                    </accordion-heading> 
+                    <md-list class="listdemoListControls">
+                        <md-list-item ng-click="navigateTo('bloque/preCarga')">
+                            <p><span class="glyphicon glyphicon-menu-right" style="margin-right: 10px;"></span> Llamados</p>
+                        </md-list-item>
+                        </md-list>
+                </accordion-group>
+                <accordion-group>
+                    <accordion-heading>
+                        <p><span class="glyphicon glyphicon-menu-down" style="margin-right: 10px;"></span> Pronosticos</p>
+                    </accordion-heading>
+                    <md-list class="listdemoListControls">
+                        <md-list-item ng-click="navigateTo('bloque/preCarga')">
+                            <p><span class="glyphicon glyphicon-menu-right" style="margin-right: 10px;"></span> Llamados</p>
+                        </md-list-item>
+                        </md-list> 
+                </accordion-group>
+                <accordion-group>
+                    <accordion-heading>
+                        <p><span class="glyphicon glyphicon-menu-down" style="margin-right: 10px;"></span> Llegadas</p>
+                    </accordion-heading> 
+                    <md-list class="listdemoListControls">
+                        <md-list-item ng-click="navigateTo('bloque/preCarga')">
+                            <p><span class="glyphicon glyphicon-menu-right" style="margin-right: 10px;"></span> Llamados</p>
+                        </md-list-item>
+                        </md-list>
+                </accordion-group>
+                <accordion-group>
+                    <accordion-heading>
+                        <p><span class="glyphicon glyphicon-menu-down" style="margin-right: 10px;"></span> Usuarios</p>
                     </accordion-heading> 
                     <md-list class="listdemoListControls">
                         <md-list-item ng-click="navigateTo('Person/personas')">
