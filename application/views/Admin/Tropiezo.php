@@ -43,7 +43,7 @@
                         <td><span class="glyphicon" ng-class="( (row.Estatus==1) ? 'mdi-action-done activo' : 'mdi-action-highlight-remove inactivo')" aria-hidden="true" title="ACTIVO" style="color:green"></span></td>
                         <td>
                             <div class="btn-group">
-                                <a class="btn btn-material-indigo btn-xs" href=""  ng-click="getTropiezo(row.Opciones)" data-toggle="modal" data-target="#modificar_tropiezo"><span class="glyphicon glyphicon-search"></span></a>
+                                <a class="btn btn-material-blue btn-xs" href=""  ng-click="getTropiezo(row.Opciones)" data-toggle="modal" data-target="#modificar_tropiezo"><span class="glyphicon glyphicon-search"></span></a>
                             </div>
                         </td>
 

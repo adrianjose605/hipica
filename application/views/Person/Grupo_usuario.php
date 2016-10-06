@@ -32,7 +32,7 @@
                             <td>{{ row.Nombre}}</td>
                             <td>
                                 <div class="btn-group">
-                                    <a class="btn btn-material-indigo btn-xs" href=""  ng-click="getPais(row.Opciones)" data-toggle="modal" data-target="#modificar_grupo"><span class="glyphicon glyphicon-search"></span></a>
+                                    <a class="btn btn-material-blue btn-xs" href=""  ng-click="getPais(row.Opciones)" data-toggle="modal" data-target="#modificar_grupo"><span class="glyphicon glyphicon-search"></span></a>
                                 </div>
                             </td>
 

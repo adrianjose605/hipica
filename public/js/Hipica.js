@@ -22,7 +22,9 @@ angular.module('hipica', ['ngMaterial', 'ngMessages', 'ngTasty', 'ui.bootstrap',
     })
     .accentPalette('red',{
         'default': '900',
-        'hue-1': 'A100'
+        'hue-1': 'A700',
+        'hue-2': '900',
+        'hue-3': 'A700',
     });
 });
 function hacerToast(type, msg, toast) {

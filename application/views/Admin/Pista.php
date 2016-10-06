@@ -33,12 +33,14 @@
         <tbody>
             <tr ng-repeat="row in rows" class="centrado">                
                 <td>{{ row.Descripcion}}</td>
+                <td>{{ row.Abreviatura}}</td>
                 <td>{{ row.Tipo}}</td>                        
                 <td>{{ row.Hipodromo}}</td>                
+                <td>{{ row.Pais}}</td>                
                 <td><span class="glyphicon" ng-class="( (row.Estatus==1) ? 'mdi-action-done activo' : 'mdi-action-highlight-remove inactivo')" aria-hidden="true" title="ACTIVO" style="color:green"></span></td>
                 <td>
                     <div class="btn-group">
-                        <a class="btn btn-material-indigo btn-xs" href="" ng-click="get(row.Opciones)" data-toggle="modal" data-target="#edicion"><span class="glyphicon glyphicon-search"></span></a>
+                        <a class="btn btn-material-blue btn-xs" href="" ng-click="get(row.Opciones)" data-toggle="modal" data-target="#edicion"><span class="glyphicon glyphicon-search"></span></a>
                     </div>
                 </td>
             </tr>
@@ -56,7 +58,7 @@
 <!--MODAL DE CREACION-->
 
 
-<div id="nuevo" class="modal fade" role="dialog">x
+<div id="nuevo" class="modal fade" role="dialog">
     <div class="modal-dialog">                
         <div class="modal-content">
             <div class="modal-header">
@@ -76,7 +78,17 @@
                 </ng-messages>
             </md-input-container>
         </div>
-
+            
+         <div class="form-group">
+            <md-input-container flex>
+                    <label>Abreviatura</label>
+                    <input ng-model="obj.abreviatura" maxlength="5"  pattern="^[a-zA-Z0-9áéíóúñ_]+( [a-zA-Z0-9áéíóúñ _]+)*$" name="abreviatura_pista" type="text"  ng-required="true">
+                    <ng-messages for="crear.abreviatura_pista.$error" role="alert" ng-if="submitted">
+                    <ng-message when="required">Debe indicar una Abreviatura</ng-message>
+                    <ng-message when="pattern">La Abreviatura deben ser caracteres</ng-message>  
+                    </ng-messages>
+            </md-input-container>
+        </div>
 
 
         <div class="form-group">
@@ -149,10 +161,19 @@
                     <ng-messages for="modificar.nombre_pais.$error" role="alert" ng-if="submitted">
                     <ng-message when="required">Debe indicar una Descripcion</ng-message>
                     <ng-message when="pattern">La Descripcion deben ser caracteres</ng-message>  
-                </ng-messages>
-            </md-input-container>
-        </div>
-
+                     </ng-messages>
+                    </md-input-container>
+                 </div>
+                <div class="form-group">
+                    <md-input-container flex>
+                    <label>Abreviatura</label>
+                    <input ng-model="obj2.abreviatura" maxlength="5"  pattern="^[a-zA-Z0-9áéíóúñ_]+( [a-zA-Z0-9áéíóúñ _]+)*$" name="abreviatura_pista" type="text"  ng-required="true">
+                    <ng-messages for="modificar.abreviatura_pista.$error" role="alert" ng-if="submitted">
+                    <ng-message when="required">Debe indicar una abreviatura</ng-message>
+                    <ng-message when="pattern">La abreviatura deben ser caracteres</ng-message>  
+                     </ng-messages>
+                    </md-input-container>
+                 </div>
 
 
         <div class="form-group">

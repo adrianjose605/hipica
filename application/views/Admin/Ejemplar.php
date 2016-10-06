@@ -53,7 +53,7 @@
                                 'mdi-action-highlight-remove inactivo':(row.Estatus==0), 'glyphicon-time inactivo':(row.Estatus==2)}" aria-hidden="true" title="ACTIVO" style="color:green"></span></td>
                         <td>
                             <div class="btn-group">
-                                <a class="btn btn-material-indigo btn-xs" href="" ng-click="get(row.Opciones)" data-toggle="modal" data-target="#edicion"><span class="glyphicon glyphicon-search"></span></a>
+                                <a class="btn btn-material-blue btn-xs" href="" ng-click="get(row.Opciones)" data-toggle="modal" data-target="#edicion"><span class="glyphicon glyphicon-search"></span></a>
                             </div>
                         </td>
 

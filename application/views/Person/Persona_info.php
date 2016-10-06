@@ -355,7 +355,7 @@
                                             <td style="text-align:left"><span class="mdi-action-done"></span></td>
                                             <td style="text-align:left">
                                                 <div class="btn-group">
-                                                    <a class="btn btn-material-indigo btn-xs" href=""  ng-click="navigateTo('Person/personas/info')" data-toggle="modal" data-target="#modificar_pais"><span class="glyphicon glyphicon-search"></span></a>
+                                                    <a class="btn btn-material-blue btn-xs" href=""  ng-click="navigateTo('Person/personas/info')" data-toggle="modal" data-target="#modificar_pais"><span class="glyphicon glyphicon-search"></span></a>
                                                 </div>
                                             </td>
                                         </tr>

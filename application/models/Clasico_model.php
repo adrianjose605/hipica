@@ -14,7 +14,7 @@ class Clasico_model extends CI_Model {
 
     public function get_clasico($id) {
 
-        $this->db->select('tbhipodromo.idpais as pais,tbclasico.descripcion,grado, pond,  tbclasico.estatus, tbhipodromo.idhipodromo as hipodromo, patrocinador,idclasico');
+        $this->db->select('tbhipodromo.idpais_ as pais,tbclasico.descripcion,grado, pond,  tbclasico.estatus, tbhipodromo.idhipodromo as hipodromo, patrocinador,idclasico');
         $this->db->from('tbclasico');
         $this->db->join('tbhipodromo', 'tbclasico.idhipodromo=tbhipodromo.idhipodromo');
         $this->db->where('idclasico', $id);

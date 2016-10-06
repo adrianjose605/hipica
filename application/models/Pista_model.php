@@ -105,6 +105,7 @@ class Pista_model extends CI_Model {
 
 
         $this->db->select('descripcion AS Descripcion, estatus AS Estatus,idtipopista AS Opciones');
+
         if ($arr['estatus'])
             $this->db->where('estatus', $arr['estatus']);
         if (isset($arr['query']))
@@ -304,6 +305,7 @@ class Pista_model extends CI_Model {
         $res = array();
         $this->db->select('descripcion');
         $this->db->where('descripcion', $arr['descripcion']);
+        $this->db->where('idhipodromo !=', $arr['idhipodromo']);
 
 
         $arr['idtipopista'] = $arr['tipo'];
@@ -334,7 +336,7 @@ class Pista_model extends CI_Model {
     }
 
     public function get_pista($id) {
-        $this->db->select('descripcion ,estatus,idpista,idtipopista AS tipo, idhipodromo AS hipodromo');
+        $this->db->select('descripcion ,abreviatura,estatus,idpista,idtipopista AS tipo, idhipodromo AS hipodromo');
         $this->db->where('idpista', $id);
         $query = $this->db->get('tbpista');
         return $query->result_array();
@@ -356,16 +358,25 @@ class Pista_model extends CI_Model {
         $respuesta['cantidad'] = $query1->result_array();
 
 
-        $this->db->select('tbpista.descripcion AS Descripcion, tbtipopista.descripcion AS Tipo, tbhipodromo.abreviatura AS Hipodromo,tbpista.estatus AS Estatus, tbpista.idpista AS Opciones');
+        $this->db->select('tbpista.descripcion AS Descripcion, tbpista.abreviatura as Abreviatura, tbtipopista.descripcion AS Tipo, tbhipodromo.abreviatura AS Hipodromo, tbpais.abreviatura as Pais, tbpista.estatus AS Estatus, tbpista.idpista AS Opciones');
+         $this->db->from('tbpista, tbhipodromo, tbpais, tbtipopista');
+         
+
+          $this->db->where('tbpista.idtipopista=tbtipopista.idtipopista ');
+          $this->db->where('tbpista.idhipodromo=tbhipodromo.idhipodromo ');
+          $this->db->where('tbpais.idpais=tbhipodromo.idpais_ ');
+              
+        //--------------------------------------------------------------------------------------------------------------
         if ($arr['estatus'])
             $this->db->where('tbpista.estatus', $arr['estatus']);
         if (isset($arr['query']))
             $this->db->like('tbpista.descripcion', $arr['query']);
-        $this->db->from('tbpista');
+        /*
         $this->db->join('tbtipopista', 'tbtipopista.idtipopista = tbpista.idtipopista');
-        $this->db->join('tbhipodromo', 'tbhipodromo.idhipodromo = tbpista.idhipodromo');
+        $this->db->join('tbhipodromo', 'tbhipodromo.idhipodromo = tbpista.idhipodromo');*/
         $this->db->limit($cantidad, $offset);
-        $this->db->order_by($order, $type);
+        $this->db->order_by('Descripcion', $type);
+        //return $this->db->get_compiled_select();
         $query = $this->db->get();
         $respuesta['resultado'] = $query->result_array();
 

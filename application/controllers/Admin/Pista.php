@@ -25,7 +25,7 @@ class Pista extends CI_Controller {
         $ret = array();
         $inicio = $page * $count - $count;
         $array = $this->Pista_model->generar_json_tabla_pista($inicio, $count, $order, $type);
-
+        
         if ($type != 'asc') {
             $type = 'dsc';
         }

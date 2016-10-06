@@ -40,7 +40,7 @@ class Carrera_model extends CI_Model {
         
             
         if(isset($arr['pais']))
-            $this->db->where("tbhipodromo.idpais",$arr['pais']);
+            $this->db->where("tbhipodromo.idpais_",$arr['pais']);
             
         if(isset($arr['fecha_carrera']))
             $this->db->where("DATE(tbcarrera.fecha_carrera)",date("Y-m-d", strtotime($arr['fecha_carrera'])));            
@@ -60,7 +60,7 @@ class Carrera_model extends CI_Model {
         $this->db->join('tbpistadistancia','tbcarrera.idpistadistancia=tbpistadistancia.idpistadistancia');
         $this->db->join('tbpista','tbpista.idpista=tbpistadistancia.idpista');
         $this->db->join('tbhipodromo','tbhipodromo.idhipodromo=tbpista.idhipodromo');
-        $this->db->join('tbpais','tbhipodromo.idpais=tbpais.idpais');
+        $this->db->join('tbpais','tbhipodromo.idpais_=tbpais.idpais');
         $this->db->join('tbdistancia','tbpistadistancia.iddistancia=tbdistancia.iddistancia');
         
         
@@ -68,7 +68,7 @@ class Carrera_model extends CI_Model {
             $this->db->where("tbpista.idhipodromo",$arr['hipodromo']);            
             
         if(isset($arr['pais']))
-            $this->db->where("tbhipodromo.idpais",$arr['pais']);
+            $this->db->where("tbhipodromo.idpais_",$arr['pais']);
             
         if(isset($arr['fecha_carrera']))
             $this->db->where("DATE(tbcarrera.fecha_carrera)",date("Y-m-d", strtotime($arr['fecha_carrera'])));            
@@ -159,7 +159,7 @@ class Carrera_model extends CI_Model {
                 . "numero,"
                 . "TIME(fecha_carrera) AS hora_carrera,"
                 . "nro_llamado AS llamado,idpremio AS premio, premioTotal AS premioTotal,reunion,"
-                . "trofeo,tbpistadistancia.idpista AS pista, tbpista.idhipodromo AS hipodromo,tbhipodromo.idpais AS pais";
+                . "trofeo,tbpistadistancia.idpista AS pista, tbpista.idhipodromo AS hipodromo,tbhipodromo.idpais_ AS pais";
         $this->db->select($select);
         $this->db->from('tbcarrera');
         $this->db->join('tbpistadistancia', 'tbpistadistancia.idpistadistancia=tbcarrera.idpistadistancia');

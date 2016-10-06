@@ -54,7 +54,7 @@ class Hipodromo_model extends CI_Model {
 
         $this->db->select('tbhipodromo.descripcion AS Descripcion,tbhipodromo.abreviatura AS Abreviatura,tbpais.abreviatura AS Pais,tbhipodromo.fecha_registro AS Registrado,tbhipodromo.estatus AS Estatus,idhipodromo AS Opciones');
         $this->db->from('tbhipodromo');
-        $this->db->join('tbpais', 'tbpais.idpais = tbhipodromo.idpais');
+        $this->db->join('tbpais', 'tbpais.idpais = tbhipodromo.idpais_');
         if ($arr['estatus'])
             $this->db->where('tbhipodromo.estatus', $arr['estatus']);
         if (!empty($likes))
@@ -88,6 +88,7 @@ class Hipodromo_model extends CI_Model {
         $this->db->select('abreviatura');
         $this->db->where('abreviatura', $arr['abreviatura']);
         $this->db->where('idhipodromo!=', $arr['idhipodromo']);
+        $this->db->where('idpais_', $arr['idpais']);
 
         $query1 = $this->db->get('tbhipodromo');
         if ($query1->num_rows() > 0) {
@@ -159,7 +160,7 @@ class Hipodromo_model extends CI_Model {
         if ($activos)
             $this->db->where('estatus', $activos);
         
-        $this->db->where('idpais',$pais);
+        $this->db->where('idpais_',$pais);
         $query = $this->db->get('tbhipodromo');
         return $query->result_array();
     }

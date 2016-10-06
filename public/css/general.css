@@ -53,8 +53,8 @@ overflow-y: auto;
 
 
 .pagination>.active>a{
-	background-color:#495bc0 !important;
-	border-color:#495bc0 !important;
+	background-color:#0051B2 !important;
+	border-color:#0051B2 !important;
 }
 
 .pagination>li>a{
@@ -63,7 +63,7 @@ overflow-y: auto;
 
 .pagination>li>a:hover{
 	color:black;
-	border-color:#495bc0;
+	border-color:#0051B2;
 }
 
 .fot{

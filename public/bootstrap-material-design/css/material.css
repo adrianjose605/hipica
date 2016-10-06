@@ -2749,7 +2749,7 @@ body .well-material-blue,
 body .jumbotron-material-blue,
 .container .jumbotron-material-blue,
 .container-fluid .jumbotron-material-blue {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 body .well-material-light-blue,
 .container .well-material-light-blue,
@@ -2918,7 +2918,7 @@ body .jumbotron-material-blue-grey,
   color: #3f51b5;
 }
 .btn-material-blue.btn-flat:not(.btn-link) {
-  color: #2196f3;
+  color: #045FB4;
 }
 .btn-material-light-blue.btn-flat:not(.btn-link) {
   color: #03a9f4;
@@ -3018,7 +3018,7 @@ body .jumbotron-material-blue-grey,
   color: rgba(255, 255, 255, 0.84);
 }
 .btn-material-blue:not(.btn-link):not(.btn-flat) {
-  background-color: #2196f3;
+  background-color: #045FB4;
   color: rgba(255, 255, 255, 0.84);
 }
 .btn-material-light-blue:not(.btn-link):not(.btn-flat) {
@@ -3084,7 +3084,7 @@ body .jumbotron-material-blue-grey,
   background-color: #f5f5f5;
 }
 .btn-inverse:hover:not(.btn-link):not(.btn-flat) {
-  background-color: #495bc0;
+  background-color: #0051B2;
 }
 .btn-primary:hover:not(.btn-link):not(.btn-flat) {
   background-color: #00aa9a;
@@ -3114,7 +3114,7 @@ body .jumbotron-material-blue-grey,
   background-color: #7142c3;
 }
 .btn-material-indigo:hover:not(.btn-link):not(.btn-flat) {
-  background-color: #495bc0;
+  background-color: #0051B2;
 }
 .btn-material-blue:hover:not(.btn-link):not(.btn-flat) {
   background-color: #349ff4;
@@ -3518,7 +3518,7 @@ body .jumbotron-material-blue-grey,
 .btn.btn-fab-material-blue,
 .btn.btn-fab:hover-material-blue,
 .btn.btn-fab:active-material-blue {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .btn.btn-fab-material-light-blue,
 .btn.btn-fab:hover-material-light-blue,
@@ -3668,7 +3668,7 @@ body .jumbotron-material-blue-grey,
   background-color: #3f51b5;
 }
 .open > .dropdown-toggle.btn-material-blue {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .open > .dropdown-toggle.btn-material-light-blue {
   background-color: #03a9f4;
@@ -3903,7 +3903,7 @@ body .jumbotron-material-blue-grey,
   background-color: #3f51b5;
 }
 .checkbox-material-blue input[type=checkbox]:checked + .checkbox-material .check:after {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .checkbox-material-light-blue input[type=checkbox]:checked + .checkbox-material .check:after {
   background-color: #03a9f4;
@@ -3988,7 +3988,7 @@ body .jumbotron-material-blue-grey,
   color: #3f51b5;
 }
 .checkbox-material-blue input[type=checkbox]:checked + .checkbox-material .check:before {
-  color: #2196f3;
+  color: #045FB4;
 }
 .checkbox-material-light-blue input[type=checkbox]:checked + .checkbox-material .check:before {
   color: #03a9f4;
@@ -4073,7 +4073,7 @@ body .jumbotron-material-blue-grey,
   color: #3f51b5;
 }
 .checkbox-material-blue input[type=checkbox]:checked + .checkbox-material .check {
-  color: #2196f3;
+  color: #045FB4;
 }
 .checkbox-material-light-blue input[type=checkbox]:checked + .checkbox-material .check {
   color: #03a9f4;
@@ -4460,7 +4460,7 @@ body .jumbotron-material-blue-grey,
   background-color: #3f51b5;
 }
 .togglebutton-material-blue label input[type=checkbox]:checked + .toggle:after {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .togglebutton-material-light-blue label input[type=checkbox]:checked + .toggle:after {
   background-color: #03a9f4;
@@ -4683,7 +4683,7 @@ body .jumbotron-material-blue-grey,
   background-color: #3f51b5;
 }
 .radio-material-blue input[type=radio]:checked ~ .check {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .radio-material-light-blue input[type=radio]:checked ~ .check {
   background-color: #03a9f4;
@@ -4768,7 +4768,7 @@ body .jumbotron-material-blue-grey,
   border-color: #3f51b5;
 }
 .radio-material-blue input[type=radio]:checked ~ .circle {
-  border-color: #2196f3;
+  border-color: #045FB4;
 }
 .radio-material-light-blue input[type=radio]:checked ~ .circle {
   border-color: #03a9f4;
@@ -5101,7 +5101,7 @@ fieldset[disabled] .form-control.focus:disabled,
   background-image: linear-gradient(#3f51b5, #3f51b5), linear-gradient(#d2d2d2, #d2d2d2);
 }
 .form-group-material-blue .form-control:focus {
-  background-image: linear-gradient(#2196f3, #2196f3), linear-gradient(#d2d2d2, #d2d2d2);
+  background-image: linear-gradient(#045FB4, #045FB4), linear-gradient(#d2d2d2, #d2d2d2);
 }
 .form-group-material-light-blue .form-control:focus {
   background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#d2d2d2, #d2d2d2);
@@ -5186,7 +5186,7 @@ fieldset[disabled] .form-control.focus:disabled,
   background-image: linear-gradient(#3f51b5, #3f51b5), linear-gradient(#d2d2d2, #d2d2d2);
 }
 .form-group-material-blue .form-control.focus {
-  background-image: linear-gradient(#2196f3, #2196f3), linear-gradient(#d2d2d2, #d2d2d2);
+  background-image: linear-gradient(#045FB4, #045FB4), linear-gradient(#d2d2d2, #d2d2d2);
 }
 .form-group-material-light-blue .form-control.focus {
   background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#d2d2d2, #d2d2d2);
@@ -5271,7 +5271,7 @@ fieldset[disabled] .form-control.focus:disabled,
   color: #3f51b5;
 }
 .form-group-material-blue .control-label {
-  color: #2196f3;
+  color: #045FB4;
 }
 .form-group-material-light-blue .control-label {
   color: #03a9f4;
@@ -5356,7 +5356,7 @@ fieldset[disabled] .form-control.focus:disabled,
   color: #3f51b5;
 }
 .form-group-material-blue input.form-control:focus ~ .floating-label {
-  color: #2196f3;
+  color: #045FB4;
 }
 .form-group-material-light-blue input.form-control:focus ~ .floating-label {
   color: #03a9f4;
@@ -6146,7 +6146,7 @@ fieldset[disabled] .navbar .btn-link:focus {
   color: rgba(255, 255, 255, 0.84);
 }
 .navbar-material-blue.navbar {
-  background-color: #2196f3;
+  background-color: #045FB4;
   color: rgba(255, 255, 255, 0.84);
 }
 .navbar-material-blue.navbar .navbar-form .form-control-wrapper input.form-control::-webkit-input-placeholder,
@@ -6167,10 +6167,10 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 .navbar-material-blue.navbar .dropdown-menu li > a:hover,
 .navbar-material-blue.navbar .dropdown-menu li > a:focus {
-  color: #2196f3;
+  color: #045FB4;
 }
 .navbar-material-blue.navbar .dropdown-menu .active > a {
-  background-color: #2196f3;
+  background-color: #045FB4;
   color: rgba(255, 255, 255, 0.84);
 }
 .navbar-material-blue.navbar .dropdown-menu .active > a:hover,
@@ -6668,7 +6668,7 @@ fieldset[disabled] .navbar .btn-link:focus {
   color: #3f51b5;
 }
 .dropdown-menu-material-blue li a:hover {
-  color: #2196f3;
+  color: #045FB4;
 }
 .dropdown-menu-material-light-blue li a:hover {
   color: #03a9f4;
@@ -6829,7 +6829,7 @@ fieldset[disabled] .navbar .btn-link:focus {
   color: rgba(255, 255, 255, 0.84);
 }
 .alert-material-blue {
-  background-color: #2196f3;
+  background-color: #045FB4;
   color: rgba(255, 255, 255, 0.84);
 }
 .alert-material-blue a,
@@ -7003,7 +7003,7 @@ fieldset[disabled] .navbar .btn-link:focus {
   background-color: #3f51b5;
 }
 .progress .progress-bar-material-blue {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .progress .progress-bar-material-light-blue {
   background-color: #03a9f4;
@@ -7167,7 +7167,7 @@ icon-material-indigo {
 }
 .mdi-material-blue,
 icon-material-blue {
-  color: #2196f3;
+  color: #045FB4;
 }
 .mdi-material-light-blue,
 icon-material-light-blue {
@@ -7368,7 +7368,7 @@ icon-material-blue-grey {
   background-color: #3f51b5;
 }
 .label-material-blue {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .label-material-light-blue {
   background-color: #03a9f4;
@@ -7458,7 +7458,7 @@ icon-material-blue-grey {
   background-color: #3f51b5;
 }
 .panel-material-blue > .panel-heading {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .panel-material-light-blue > .panel-heading {
   background-color: #03a9f4;
@@ -7734,7 +7734,7 @@ hr.on-light {
   background-color: #3f51b5;
 }
 .slider-material-blue.noUi-connect {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .slider-material-light-blue.noUi-connect {
   background-color: #03a9f4;
@@ -7819,7 +7819,7 @@ hr.on-light {
   background-color: #3f51b5;
 }
 .slider-material-blue .noUi-connect {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .slider-material-light-blue .noUi-connect {
   background-color: #03a9f4;
@@ -7904,7 +7904,7 @@ hr.on-light {
   background-color: #3f51b5;
 }
 .slider-material-blue .noUi-handle {
-  background-color: #2196f3;
+  background-color: #045FB4;
 }
 .slider-material-light-blue .noUi-handle {
   background-color: #03a9f4;
@@ -7989,7 +7989,7 @@ hr.on-light {
   border-color: #3f51b5;
 }
 .slider-material-blue .noUi-handle {
-  border-color: #2196f3;
+  border-color: #045FB4;
 }
 .slider-material-light-blue .noUi-handle {
   border-color: #03a9f4;
