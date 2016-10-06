@@ -268,6 +268,7 @@ class Pista_model extends CI_Model {
 
         $this->db->where('idpista!=', $arr['idpista']);
         $this->db->where('descripcion', $arr['descripcion']);
+         $this->db->where('idhipodromo =', $arr['hipodromo']);
         $query1 = $this->db->get('tbpista');
         if ($query1->num_rows() > 0) {
             $res['status'] = 0;
@@ -305,7 +306,7 @@ class Pista_model extends CI_Model {
         $res = array();
         $this->db->select('descripcion');
         $this->db->where('descripcion', $arr['descripcion']);
-        $this->db->where('idhipodromo !=', $arr['idhipodromo']);
+        $this->db->where('idhipodromo =', $arr['hipodromo']);
 
 
         $arr['idtipopista'] = $arr['tipo'];
